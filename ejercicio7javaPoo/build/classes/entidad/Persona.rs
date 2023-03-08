@@ -1,0 +1,3 @@
+entidad.entidades
+Ejercicio7javaPoo.Persona
+ejercicio7javapoo.Persona

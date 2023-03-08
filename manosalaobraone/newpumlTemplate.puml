@@ -1,0 +1,12 @@
+@startuml
+class test{
+--atributos--
+-char c1
+-int c3
+--constructores--
++jugador j2()
++numero()
++test()
+
+}
+@enduml
