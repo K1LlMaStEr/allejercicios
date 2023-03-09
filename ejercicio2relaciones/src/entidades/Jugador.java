@@ -4,19 +4,30 @@
  */
 package entidades;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author gonza
  */
-public class jugador {
+public class Jugador {
     private String nombre;
     private int id;
     private Boolean mojau;
-
-    public jugador() {
+    ArrayList<String> Jugadores = new ArrayList();
+   
+    public Jugador() {
     }
 
-    public jugador(String nombre, int id, Boolean mojau) {
+    public ArrayList<String> getJugadores() {
+        return Jugadores;
+    }
+
+    public void setJugadores(ArrayList<String> Jugadores) {
+        this.Jugadores = Jugadores;
+    }
+
+    public Jugador(String nombre, int id, Boolean mojau) {
         this.nombre = nombre;
         this.id = id;
         this.mojau = mojau;
