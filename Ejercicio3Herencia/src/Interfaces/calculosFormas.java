@@ -11,6 +11,7 @@ package Interfaces;
  */
 public interface calculosFormas {
     
+    //public final double PI = 3.14159254d;
 
     public void perimetroCirculo(double pi , double diametro );
     public void perimetroRectangulo(double base, double altura);
