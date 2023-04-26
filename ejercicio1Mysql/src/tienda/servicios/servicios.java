@@ -35,6 +35,7 @@ public class servicios {
             System.out.println("9- salir");
             System.out.println("elija una opcion");
             opcionMenu = leer.nextInt();
+            
             switch (opcionMenu) {
                 
                 case 1:
@@ -59,14 +60,45 @@ public class servicios {
                         
                     }
                    break;
-                case 3:
-                    System.out.println("");
+                case 3: try {
+                     System.out.println( sv.preciosEntre());
+                        
+                    } catch (Exception e) {
+                         e.printStackTrace();
+                      System.out.println("Error de sistema por \n" + e.getMessage());
+                        
+                    }
+                   break;
                 case 4:
-                    System.out.println("");
+                     try {
+                     System.out.println( sv.portatil());
+                        
+                    } catch (Exception e) {
+                         e.printStackTrace();
+                      System.out.println("Error de sistema por \n" + e.getMessage());
+                        
+                    }
+                   break;
                 case 5:
-                    System.out.println("");
+                     try {
+                     System.out.println( sv.baratos());
+                        
+                    } catch (Exception e) {
+                         e.printStackTrace();
+                      System.out.println("Error de sistema por \n" + e.getMessage());
+                        
+                    }
+                   break;
                 case 6:
-                    System.out.println("");
+                     try {
+                     System.out.println( sv.);
+                        
+                    } catch (Exception e) {
+                         e.printStackTrace();
+                      System.out.println("Error de sistema por \n" + e.getMessage());
+                        
+                    }
+                   break;
                 case 7:
                     System.out.println("");
                     

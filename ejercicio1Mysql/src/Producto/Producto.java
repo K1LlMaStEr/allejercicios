@@ -16,7 +16,7 @@ public class Producto {
       private int codigo;
       private String nombre;
       private double precio;
-      int codigoFabricante;
+      double codigoFabricante;
     
     public Producto() {
     }
@@ -51,9 +51,11 @@ public class Producto {
         this.precio = precio;
     }
 
-    public int getCodigoFabricante() {
+    public double getCodigoFabricante() {
         return codigoFabricante;
     }
+
+
 
     public void setCodigoFabricante(int codigoFabricante) {
         this.codigoFabricante = codigoFabricante;

@@ -61,6 +61,18 @@ public abstract class claseDao {
             throw ex;
         }
     }
+     protected void insertarModificarEliminar(String sql) throws Exception {
+        try {
+            conectarBase();
+            sentencia = conexion.createStatement();
+            sentencia.executeUpdate(sql);
+        } catch (SQLException ex) {
+           
+            throw ex;
+        } finally {
+            desconectarBase();
+        }
+    }
 }
 
     
