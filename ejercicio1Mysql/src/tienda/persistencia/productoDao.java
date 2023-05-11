@@ -10,21 +10,20 @@ public final class productoDao extends claseDao {
     public productoDao() {
     }
     
-    public ArrayList <String> ListarProductos() throws Exception{
+    public ArrayList <Producto> ListarProductos() throws Exception{
     
             try {
                 String sql="select nombre from producto";
-                  consultarBase(sql);
-                String nombreProducto=null;
+                consultarBase(sql);
+                Producto nombreProducto=null;
                
-                 ArrayList<String> nombreProductos = new ArrayList();
+                ArrayList<Producto> nombreProductos = new ArrayList();
                   
                 while (resultado.next()) {
-                   
-                nombreProducto=resultado.getString(1);
-                   
-                nombreProductos.add(nombreProducto);
-                
+                    nombreProducto = new Producto();
+                    nombreProducto.setNombre(resultado.getString(1));
+                    nombreProductos.add(nombreProducto);
+
                 }
 
                 return nombreProductos;

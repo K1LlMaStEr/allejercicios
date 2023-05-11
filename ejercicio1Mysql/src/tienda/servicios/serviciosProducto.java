@@ -18,12 +18,13 @@ public class serviciosProducto {
     Scanner leer = new Scanner(System.in);
     
     private productoDao Dao;
-         public serviciosProducto() {
+    
+    public serviciosProducto() {
         this.Dao = new productoDao();
     }
          
     
-     public ArrayList <String> ListarProductos() throws Exception{
+     public ArrayList <Producto> ListarProductos() throws Exception{
      
         try {
             return Dao.ListarProductos();
@@ -81,7 +82,7 @@ public class serviciosProducto {
            precio=leer.nextDouble();
          
            System.out.println("ingrese fabricante acorde a la lista");
-           System.out.println(pD.());
+           System.out.println(pD.ListarProductos());
            codigoFabricante=leer.nextInt();
            
 

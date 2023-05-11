@@ -41,7 +41,12 @@ public class servicios {
                 case 1:
                     
                     try {
-                        System.out.println(sv.ListarProductos());
+                        System.out.println("+-----------------------------+");
+                        System.out.println("|     Nombre de Producto      |");
+                        System.out.println("+-----------------------------+");
+                        System.out.println(sv.ListarProductos().toString().replace(",", "+-----------------------------+\n"));
+                        
+                        System.out.println("+-----------------------------+");
                         
                     } catch (Exception e) {
                         e.printStackTrace();
