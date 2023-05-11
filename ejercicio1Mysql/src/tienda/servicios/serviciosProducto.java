@@ -81,7 +81,7 @@ public class serviciosProducto {
            precio=leer.nextDouble();
          
            System.out.println("ingrese fabricante acorde a la lista");
-           System.out.println(pD.());
+           
            codigoFabricante=leer.nextInt();
            
 
