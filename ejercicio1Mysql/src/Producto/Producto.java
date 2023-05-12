@@ -64,7 +64,7 @@ public class Producto {
     @Override
     public String toString() {
         
-        String formatoCodigo = codigo==0 ? "" : String.format("%8.8s",codigo)+"|";
+        String formatoCodigo = codigo==0 ? "" : String.format("%10.10s",codigo)+"|";
         String formatoNombre = nombre==null ? "" :String.format("%31.31s",nombre)+"|";
         String formatoPrecio = precio==0 ? "" : String.format("%.2f",precio)+"|";
         String AuxFormatoPrecio = String.format("%11.11s",formatoPrecio);
