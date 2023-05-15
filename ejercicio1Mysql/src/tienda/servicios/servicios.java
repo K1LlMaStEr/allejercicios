@@ -45,6 +45,7 @@ public class servicios {
                         System.out.println("|      Nombre de Producto       |");
                         System.out.println("+-------------------------------+");
                         String aux =sv.ListarProductos().toString().replace(",", "+-------------------------------+\n");
+                        String aux1=aux.replace("\n", "");
                         System.out.println(aux.replace("[", " ").replace("]", " "));
                         
                         System.out.println("+-------------------------------+");
