@@ -41,7 +41,13 @@ public class servicios {
                 case 1:
                     
                     try {
-                        System.out.println(sv.ListarProductos());
+                        System.out.println("+-------------------------------+");
+                        System.out.println("|      Nombre de Producto       |");
+                        System.out.println("+-------------------------------+");
+                        String aux =sv.ListarProductos().toString().replace(",", "+-------------------------------+\n");
+                        System.out.println(aux.replace("[", " ").replace("]", " "));
+                        
+                        System.out.println("+-------------------------------+");
                         
                     } catch (Exception e) {
                         e.printStackTrace();
@@ -91,7 +97,7 @@ public class servicios {
                    break;
                 case 6:
                      try {
-                     
+
                         
                     } catch (Exception e) {
                          e.printStackTrace();

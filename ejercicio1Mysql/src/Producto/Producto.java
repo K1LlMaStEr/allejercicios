@@ -63,7 +63,15 @@ public class Producto {
 
     @Override
     public String toString() {
-        return "{" + "codigo=" + codigo + ", nombre=" + nombre + ", precio=" + precio + ", codigoFabricante=" + codigoFabricante + "}\n";
+        
+        String formatoCodigo = codigo==0 ? "" : String.format("%10.10s",codigo)+"|";
+        String formatoNombre = nombre==null ? "" :String.format("%31.31s",nombre)+"|";
+        String formatoPrecio = precio==0 ? "" : String.format("%.2f",precio)+"|";
+        String AuxFormatoPrecio = String.format("%11.11s",formatoPrecio);
+        String formatoCodigoFabricante = codigoFabricante==0 ? "" : String.format("%20.20s",codigoFabricante)+"|";
+        
+        return formatoCodigo + formatoNombre + AuxFormatoPrecio + formatoCodigoFabricante + "\n";
+        
     }
     
 }

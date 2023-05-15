@@ -57,9 +57,10 @@ public class serviciosPersonas {
         System.out.println("que perro desea adoptar de la lista");
         nombrePerro=leer.next();
         Iterator <Perro> ip=perros.iterator();
-           while(ip.hasNext()){   
-            if(ip.next().getNombre().equals(nombrePerro)){
-                personas.get(indicePersona).setPerro(ip.next());
+           while(ip.hasNext()){
+               Perro perroAux=ip.next();
+            if(perroAux.getNombre().equals(nombrePerro)){
+                personas.get(indicePersona).setPerro(perroAux);
                  ip.remove();
             }
             
