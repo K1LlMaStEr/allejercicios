@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOLA MUNDO</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    
+    <link 
+    href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,100&display=swap" 
+    rel="stylesheet"
+    />
+    
+    <link rel="stylesheet" href="estilos.css"/>
+</head>
+<body>
+    <header class="header container">
+        <nav class="nav">
+            <ul class="ul">
+                <li>
+                    <a href="/navegacion-metodo-GET" target="_self" class="link">link 1</a>
+                </li>
+                <li>
+                    <a href="/navegacion-metodo-GET" target="_blank" class="link">link 2</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section id="main-section">
+        <div id="intro" class="section">
+            <h1 class="title">Asociate a Belgrano</h1>
+            <p class="subtitle">
+                Ahora podés asociarte de manera muy sencilla completando el siguiente formulario:
+Una vez completados los datos, deberás abonar tu primer cuota para activarlo. Siendo socio ya podrés comprar un abono para los partidos que Belgrano haga de local en el siguiente torneo a precios exclusivos.
+Por el momento, desde la web no se permite la generación de nuevos socios de la categoria GRUPO FAMILIAR. Para esto, debes ir a un centro de socios personalemente. De todas maneras, si podrás abonar las cuotas y comprar abonos para los integrantes de dicho grupo desde aquí.
+            </p>
+            <a href="" target="_blank" class="link">
+                Hacia el metodo de pago electronico
+            </a>
+
+        </div>
+        <div id="formulario" class="section">
+            <form action="/controlador-registro"
+            method="post"
+            class="form-registro"
+            id="form-registro"
+            enctype="multipart/form-data"
+            >
+            <div class="form-group">
+                <label for="nombre">nombre y apellido*</label>
+                <input type="text"
+                class="input input-text"
+                name="nombre"
+                required
+                placeholder="Maria Becerra"
+                />
+            </div>
+            <div class="form-group">
+                <label for="Mail">Email*</label>
+                <input type="mail"
+                class="input"
+                name="mail"
+                required
+                placeholder="mariabecerra69@arnet.com"
+                />
+            </div>
+            <div class="form-group">
+                <label for="Telefono">Telefono</label>
+                <input type="number"
+                class="input"
+                name="numero"
+                required
+                placeholder="0303456">
+            </div>
+            <div class="form-group">
+                <label for="pais">Pais</label>
+                <select name="pais" id="pais" class="input">
+                    <option value="arg">ARG</option>
+                    <option value="chi">CHI</option>
+                    <option value="bra">BRA</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="imagen">Fotito de perfil</label>
+                <input type="file" class="input" name="imagen"/>
+            </div>
+            <div class="form-group">
+                <label for="fecha">fecha de nacimiento</label>
+                <input type="date"
+                name="fecha-nacimiento"
+                min="01/01/1950"
+                max="17/05/2023"
+                />
+
+            </div>
+            <div class="form-group">
+                <label for="contrasenia">Contraseña*</label>
+                <input type="password"
+                class="input"
+                name="contrasena"
+                pattern=".{8,}"
+                placeholder="ingrese al menos 8 digitos"
+                />
+
+            </div>
+            <button type="submit" class="link btn">Registrarme</button>
+
+            </form>
+        </div>
+        <img src="" alt="">
+
+    </section>
+    <footer>
+        <p>Gracias por ser parte de Belgrano</p>
+    </footer>
+    
+</body>
+</html>

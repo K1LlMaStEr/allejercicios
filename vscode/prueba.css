@@ -1,0 +1,9 @@
+h2{
+    background-color: greenyellow;
+}
+body{
+    background-color: coral;
+}
+h2:hover{
+    color: cyan;
+}
